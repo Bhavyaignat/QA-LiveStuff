@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout
+            android:baselineAligned="false"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_margin="5dip"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/bt_qa"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@drawable/widget_bg"
+                android:layout_height="match_parent"
+                android:src="@drawable/quick_add"
+                >
+
+
+            </ImageButton>
+
+            <ImageButton
+               android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/bt_loc"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/widget_bg"
+                android:src="@drawable/loc"
+                android:layout_height="match_parent">
+
+            </ImageButton>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:id="@+id/bt_sti"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:background="@drawable/widget_bg"
+                android:src="@drawable/stuff_it_plus"
+                android:layout_height="match_parent">
+
+            </ImageButton>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/bt_qr"
+                android:layout_marginLeft="5dip"
+                android:paddingLeft="2dip"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:paddingRight="2dip"
+                android:src="@drawable/qr_bar_code"
+                android:background="@drawable/widget_bg"
+                android:layout_height="match_parent">
+            </ImageButton>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/bt_ca"
+        android:paddingLeft="2dip"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:paddingRight="2dip"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/widget_bg"
+        android:src="@drawable/camera"
+        android:layout_height="match_parent">
+    </ImageButton>
+</LinearLayout>
+
+
+

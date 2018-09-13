@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,14,12,13,2,7,15,6,16,9,17,10,18,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "126,694,564,633,55,279,757,207,880,411,963,481,1104,347",
+                        "endColumns": "51,62,68,60,70,67,122,71,82,69,140,77,109,63",
+                        "endOffsets": "173,752,628,689,121,342,875,274,958,476,1099,554,1209,406"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,170,239,300,371,439,562,634,717,787,928,1006,1116",
+                        "endColumns": "51,62,68,60,70,67,122,71,82,69,140,77,109,63",
+                        "endOffsets": "102,165,234,295,366,434,557,629,712,782,923,1001,1111,1175"
+                    }
+                }
+            ]
+        }
+    ]
+}

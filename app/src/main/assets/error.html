@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>LiveStuff</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+
+/* latin-ext */
+@font-face {
+  font-family: 'Capriola';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Capriola Regular'), local('Capriola-Regular');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Capriola';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Capriola Regular'), local('Capriola-Regular');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body{
+	font-family: 'Capriola', sans-serif;
+}
+body{
+	background:#DAD6CC;
+}
+.logo {
+    text-align: center;
+}
+.wrap{
+	width:100%;
+	margin-top:100px;
+}
+.logo h1{
+	font-size:90px;
+	color:#004785;
+	text-align:center;
+	margin:40px 0 0 0;
+	text-shadow:4px 4px 1px white;
+}	
+.logo p{
+	color:#B1A18D;
+	font-size:20px;
+	margin-top:1px;
+	text-align:center;
+}	
+.logo p span{
+	color:lightgreen;
+}	
+.sub a{
+	color:#f0333d;
+	text-decoration:none;
+	padding:5px;
+	font-size:13px;
+	font-family: arial, serif;
+	font-weight:bold;
+}	
+.footer{
+	color:white;
+	position:absolute;
+	right:10px;
+	bottom:1px;
+}	
+.footer a{
+	color:#ff7a00;
+}	
+</style>
+	<script type="text/javascript">
+
+// Native bridge variable.
+var bridge;
+// Bridge methods to connect to the native part.
+var Bridge = {};
+
+Bridge._init = function(){
+	Bridge.connectWebViewJavascriptBridge(function(bridgetemp){
+		if(!bridge) {
+			bridgetemp.init(function(message,responseCallback) {
+			});
+
+			bridge=bridgetemp;
+			bridge.registerHandler("Error", function(data) {
+				alert("Error "+data);
+				document.getElementById("msg").innerHTML = data;
+			});
+		}
+	});
+}
+
+Bridge.connectWebViewJavascriptBridge = function(callback){
+
+			if(window.WebViewJavascriptBridge){
+					callback(WebViewJavascriptBridge)
+			}else{
+					document.addEventListener('WebViewJavascriptBridgeReady', function(){
+					callback(WebViewJavascriptBridge)
+				},false)
+			}
+
+};
+
+Bridge._init();
+
+</script>
+</head>
+
+
+<body>
+<div class="wrap">
+	<div class="logo">
+		<img src="file:///android_asset/logo.png" style="width: 60%;">
+
+		<h1>Oops!</h1>
+		<p id="msg"> Error Occured Please Try Again !</p>
+		<div class="sub">
+			<p><a href="javascript:history.go(-1)">Try Again</a></p>
+		</div>
+	</div>
+</div>
+
+
+</body>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:initialLayout="@layout/w_2x2"
+    android:minHeight="140.0dip"
+    android:minWidth="140.0dip"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:previewImage="@drawable/widpreview"
+    android:updatePeriodMillis="86400000"
+    tools:ignore="UnusedAttribute" />
+
+

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/matrixbg"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/quick_add"
+            android:id="@+id/qa" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/loc"
+            android:id="@+id/loc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/stuff_it_plus"
+            android:id="@+id/sti" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/qr_bar_code"
+            android:id="@+id/qr" />
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/camera"
+            android:id="@+id/cam" />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/matrixbg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/quick_add"
+                    android:id="@+id/qa" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/ic_stat_loc"
+                    android:id="@+id/loc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/ic_stat_stuff_it_plus"
+                    android:id="@+id/sti" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                     android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/ic_stat_qr_bar_code"
+                    android:id="@+id/qr" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/ic_stat_camera"
+                    android:id="@+id/cam" />
+            </LinearLayout>
+    </LinearLayout>
+    -->

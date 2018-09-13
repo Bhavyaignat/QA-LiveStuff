@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.liveplatform.qalivestuff">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".LSApp"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googleapikey" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <receiver
+            android:name=".AppReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.music.playstatechanged" />
+                <action android:name="com.android.music.metachanged" />
+                <action android:name="com.miui.player.metachanged" />
+                <action android:name="com.miui.player.playstatechanged" />
+                <action android:name="com.htc.music.metachanged" />
+                <action android:name="fm.last.android.metachanged" />
+                <action android:name="com.sec.android.app.music.metachanged" />
+                <action android:name="com.nullsoft.winamp.metachanged" />
+                <action android:name="com.amazon.mp3.metachanged" />
+                <action android:name="com.real.IMP.metachanged" />
+                <action android:name="com.sonyericsson.music.metachanged" />
+                <action android:name="com.rdio.android.metachanged" />
+                <action android:name="com.samsung.sec.android.MusicPlayer.metachanged" />
+                <action android:name="com.andrew.apollo.metachanged" />
+                <action android:name="com.htc.music.playstatechanged" />
+                <action android:name="fm.last.android.playstatechanged" />
+                <action android:name="com.sec.android.app.music.playstatechanged" />
+                <action android:name="com.nullsoft.winamp.playstatechanged" />
+                <action android:name="com.amazon.mp3.playstatechanged" />
+                <action android:name="com.real.IMP.playstatechanged" />
+                <action android:name="com.sonyericsson.music.playstatechanged" />
+                <action android:name="com.rdio.android.playstatechanged" />
+                <action android:name="com.samsung.sec.android.MusicPlayer.playstatechanged" />
+                <action android:name="com.andrew.apollo.playstatechanged" />
+                <action android:name="gonemad.dashclock.music.playstatechanged" />
+                <action android:name="com.piratemedia.musicmod.playstatechanged" />
+                <action android:name="com.tbig.playerpro.playstatechanged" />
+                <action android:name="org.abrantix.rockon.rockonnggl.playstatechanged" />
+                <action android:name="com.maxmpz.audioplayer.playstatechanged" />
+                <action android:name="com.doubleTwist.androidPlayer.playstatechanged" />
+                <action android:name="com.lge.music.playstatechanged" />
+                <action android:name="com.spotify.music.metadatachanged" />
+                <action android:name="com.spotify.music.queuechanged" />
+                <action android:name="com.spotify.music.playbackstatechanged" />
+
+                <!-- Pandora (Tested, not working) -->
+                <action android:name="com.pandora.android.metachanged" />
+                <action android:name="com.pandora.android.playstatechanged" />
+                <action android:name="com.google.android.ytremote.PlayStateChanged" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name="com.liveplatform.livestuff.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.liveplatform.livestuff.TriggerSer"
+            android:exported="false" />
+        -->
+
+        <service
+            android:name=".LSService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote"
+            android:singleUser="true" />
+
+        <receiver android:name="widget.Onebyone">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_1x1" />
+        </receiver>
+        <receiver android:name="widget.Twobytwo">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x2" />
+        </receiver>
+        <receiver android:name="widget.Fivebyone">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_5x1" />
+        </receiver>
+        <receiver android:name="widget.Onebyone_five">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="Data.WIDGETMATRIX" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_1x1_5" />
+        </receiver>
+
+        <activity
+            android:name=".Browser"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="h3qbt.app"
+                    android:scheme="https" />
+                <data
+                    android:host="livestuff.com"
+                    android:scheme="http" />
+                <data
+                    android:host="livestuff.com"
+                    android:scheme="https" />
+                <data
+                    android:host="ls5.com"
+                    android:scheme="http" />
+                <data
+                    android:host="ls5.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DSA">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecordAudio"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name=".Location"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name=".Scanner"
+            android:configChanges="screenSize|orientation" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".LSCamera"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <!-- QA: android:authorities="${applicationId}.FacebookContentProvider236258986451521" -->
+        <!--             android:authorities="${applicationId}.FacebookContentProvider1627457787506539" -->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="${applicationId}.FacebookContentProvider1627457787506539"
+            android:exported="true" />
+        <!--
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.liveplatform.livestuff.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <provider
+            android:name=".MyDownloaderFileProvider"
+            android:authorities="${applicationId}.download.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/download_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <!--
+            <activity android:name=".PopUpBrowser"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.MyDialog"
+            />
+        -->
+        <!-- BJ 09/08/2017: Commented above and updated below to show popup in fullscreen -->
+        <activity
+            android:name=".PopUpBrowser"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".GlideModule"
+            android:theme="@style/Theme.ImageViewer">
+        </activity>
+    </application>
+
+</manifest>

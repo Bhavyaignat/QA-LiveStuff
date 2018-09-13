@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    <FrameLayout
+        android:id="@+id/scanPreview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/widget_bg"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/scanText"
+        android:layout_above="@+id/vher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Scanner"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorAccent" />
+    <View android:layout_height="1dp"
+        android:id="@+id/vher"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/scan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimary"/>
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_below="@+id/vher"
+        android:background="@drawable/llbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/scan"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bgcam" />
+    <FrameLayout
+        android:id="@+id/fl2"
+        android:background="@drawable/llbg"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView1"
+        android:layout_margin="2dp"
+        android:contentDescription="@string/imagecontdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>

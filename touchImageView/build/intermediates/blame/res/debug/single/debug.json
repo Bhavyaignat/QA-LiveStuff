@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable_nature_1.jpg.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable\\nature_1.jpg"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable_nature_2.jpg.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable\\nature_2.jpg"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_mirroring_example.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_mirroring_example.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_viewpager_example.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_viewpager_example.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable_nature_4.jpg.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable\\nature_4.jpg"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable_nature_3.jpg.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable\\nature_3.jpg"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon.png.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_icon.png.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_single_touchimageview.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_single_touchimageview.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_switch_image_example.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_switch_image_example.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_icon.png.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\layout_activity_switch_scaletype_example.xml.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\layout\\activity_switch_scaletype_example.xml"
+    },
+    {
+        "merged": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\build\\intermediates\\res\\merged\\debug\\drawable_nature_5.jpg.flat",
+        "source": "C:\\Bhavya DDrive\\11162017-ANDROID LATEST\\QA-LiveStuff\\touchImageView\\src\\main\\res\\drawable\\nature_5.jpg"
+    }
+]

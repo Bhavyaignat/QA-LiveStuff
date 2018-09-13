@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Location" />
+
+    <!--<ImageButton
+        android:id="@+id/imbtndoneLoc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_bgcam"
+        android:contentDescription="@string/imagecontdesc2"
+        android:scaleType="centerInside"
+        android:padding="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/add_svg"
+        android:visibility="visible" />-->
+    <!--BJ 09/12/2017:Commented above and updated below to Use Standard Add icon.-->
+    <ImageButton
+        android:id="@+id/imbtndoneLoc"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_bgcam"
+        android:contentDescription="@string/imagecontdesc2"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/add_svg"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:contentDescription="@string/imagecontdesc"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/headericon" />
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">LiveStuff</string>
+    <string name="Scanner" translatable="false">Scanning&#8230;</string>
+    <string name="imagecontdesc" translatable="false">header</string>
+    <string name="imagecontdesc2" translatable="false">middle</string>
+    <string name="recordinginitial" translatable="false">START RECORDING</string>
+    <string name="btRecord" translatable="false">RECORD</string>
+    <string name="btPlay" translatable="false">PLAY</string>
+    <string name="btSave" translatable="false">Save</string>
+    <string name="btDismiss" translatable="false">Dismiss</string>
+    <string name="donebtn" translatable="false">Save</string>
+    <string name="title_activity_location" translatable="false">Location</string>
+    <string name="widgetdesc" translatable="false">LiveStuff Widget</string>
+    <!--<string name="googleapikey" translatable="false">AIzaSyBExnZmPYfExnW2V9jljU454Kgmsxmk8hI</string>-->
+    <!--APIKey for Release mode(up) and debug mode(down)-->
+    <string name="googleapikey" translatable="false">AIzaSyBuRvfN4O88hZICH2XB6MX32r4Pxm3lIMY</string>
+    <!--Pre-release facebook id: 236258986451521
+    Live facebook id: 236258986451521
+    -->
+    <string name="facebook_app_id">236258986451521</string>
+    <!--<string name="facebook_app_id">736671779804810</string>-->
+    <!--<string name="facebook_app_id">131459960903661</string>-->
+    <string name="title_activity_tv" translatable="false">LiveStuff TV</string>
+    <string name="exit_msg" translatable="false">Exit from LiveStuff?</string>
+    <string name="connect_msg" translatable="false">No Internet Connection !</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="yes" translatable="false">YES</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="no" translatable="false">NO</string>
+    <string name="manual" translatable="false">MANUAL ADD</string>
+    <string name="quick" translatable="false">QUICK ADD</string>
+    <string name="location" translatable="false">LOCATION</string>
+    <string name="stuffit" translatable="false">STUFF IT</string>
+    <string name="file" translatable="false">FILE</string>
+    <string name="newcloud" translatable="false">NEW CLOUD</string>
+    <string name="qr" translatable="false">QR/BARCODE</string>
+    <string name="camera" translatable="false">CAMERA</string>
+    <string name="crash_toast_text">Error</string>
+    <string name="notification_error_ssl_cert_invalid">Redirecting to Unauthorized SSL Certificate</string>
+    <string name="RMP">Remember Password</string>
+    <string name="YES">Yes</string>
+    <string name="download_message">File Downloaded</string>
+    <string name="openfile">OPEN</string>
+    <string name="title_activity_glide_module">GlideModule</string>
+</resources>
+

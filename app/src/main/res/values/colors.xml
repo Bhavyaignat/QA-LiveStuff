@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="white">#FFffff</color>
+    --> <color name="white">#FFffff</color>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#125688</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="transparent">#00b8860b</color>
+    <color name="LScolor">#004785</color>
+    <!--<color name="matrixbg">#44ffffff</color>-->
+    <color name="matrixbg">#5599b5ce</color>
+    <color name="LSLiteColor">#0070d2</color>
+    <color name="ProgressBack">#A9A9A9</color>
+</resources>

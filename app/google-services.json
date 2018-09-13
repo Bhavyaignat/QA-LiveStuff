@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "245934175055",
+    "firebase_url": "https://livestuffwith-new-sha1.firebaseio.com",
+    "project_id": "livestuffwith-new-sha1",
+    "storage_bucket": "livestuffwith-new-sha1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245934175055:android:994a9ba4b0402cca",
+        "android_client_info": {
+          "package_name": "com.liveplatform.livestuff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245934175055-si2p6eabor7qcravseerko4ltmd0him1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liveplatform.livestuff",
+            "certificate_hash": "CAE5CEC22244088DFFE1CE57BD1828E8A0033878"
+          }
+        },
+        {
+          "client_id": "245934175055-qhdl0634l4mhg7egrt04ep9d1pf4ae51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUtYU838NIl59JE2lW8SYFjX4uCpuxJWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245934175055-qhdl0634l4mhg7egrt04ep9d1pf4ae51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
